@@ -11,3 +11,8 @@ The Go Project:
 2. It has garbage collection, a package system, ﬁr class functions, lexical scope, a system call interface, and immutable strings in which text is generally encoded in UTF-8. 
 3. It has no implicit numeric conversions, no constructors or destructors, no operator overloading, no default parameter values, no inheritance, no generics, no exceptions, no macros, no function annotations, and no thread-local storage.
 4. Go has concurrency features  based on CSP (communicating sequential process). [The variab size stacks of Go’s lightweight threads or goroutines are initially small enough that creating one goroutine is cheap and creating a million is practical]
+
+
+1.3 Finding Duplicate lines
+	1. Programs for ﬁle copying, printing, searching, sorting, counting, and the like all have a similar structure: a loop over the input, some computation on each element, and generation of output on the ﬂy or at the end.
+	 
