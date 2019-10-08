@@ -34,13 +34,13 @@
 	* While writing for loop these parts may be omitted
 		* A traditional while loop
 		```
-for condition {
+		for condition {
 		   // ...
 		}
 		```
 		* A traditional infinite loop
 		```
-for {
+		for {
 		   // ...
 		}
 		```
