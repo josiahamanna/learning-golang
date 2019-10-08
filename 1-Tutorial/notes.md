@@ -21,7 +21,28 @@
 	* If the program is more than a one-shot experiment, compile the code once and save the compiled result for later use. $ go build filename.go
 1. Go code is organized into packages, which are similar to libraries or modules in other languages. A package consists of one or more .go source files in a single directory that define what the package does.
 1. Package main is the standalone executable program, not a library. Function main will be within package main. It's where the execution begins, whatever this function does is what the program does.
-1. After package declaration import declaration is written. This tells the compiler what packages are needed by the source file.
+1. After package declaration import declaration is written. This tells the compiler what packages are needed by the source file. You must import exactly the packages you need. (or else program wont compile. same goes if there are missing imports)
+1. Go takes a strong stance on code formating. (The gofmt tool rewrites code into the standard format)
 
+### Command-Line Arguments
+1. Command-Line arguments are available to a program in a variable named Args that is part of the os package. This is a *slice* of strings.
+1. Refer echo1.go
+	* Comments begins with //
+	* If a variable is not explicitely initialised, it is implicitely initialised to the *zero* value for its type.
+	* Addition operator (+) for strings concatenates the values.
+	* The **:=** symbol is part of a *short variable declaration*, a statement that declares one or more variables and gives them appropriate types based on the initializer values.
+	* While writing for loop these parts may be omitted
+		* A traditional while loop
+		```   
+		for condition {
+		   // ...
+		}
+```
+		* A traditional infinite loop
+		``` 
+		for {
+		   // ...
+		}
+``` 
 ### 1.3 Finding Duplicate lines
 1. Programs for ﬁle copying, printing, searching, sorting, counting, and the like all have a similar structure: a loop over the input, some computation on each element, and generation of output on the ﬂy or at the end.
