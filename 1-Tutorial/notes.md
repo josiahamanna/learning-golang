@@ -33,16 +33,14 @@
 	* The **:=** symbol is part of a *short variable declaration*, a statement that declares one or more variables and gives them appropriate types based on the initializer values.
 	* While writing for loop these parts may be omitted
 		* A traditional while loop
-		```   
-		for condition {
+		```for condition {
 		   // ...
 		}
-```
+		```
 		* A traditional infinite loop
-		``` 
-		for {
+		```for {
 		   // ...
 		}
-``` 
+		```
 ### 1.3 Finding Duplicate lines
 1. Programs for ﬁle copying, printing, searching, sorting, counting, and the like all have a similar structure: a loop over the input, some computation on each element, and generation of output on the ﬂy or at the end.
