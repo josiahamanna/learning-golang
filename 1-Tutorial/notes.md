@@ -47,9 +47,9 @@
 		```
 
 1. Refer echo2.go
-        * range produces a pair of values: the index and the value of the element at that index.
-        * If we don't need to use the index we can use *blank identifier* i.e., underscore (\_)
-        * Go does not allow unused variables, it would result in compilation error.
+	* range produces a pair of values: the index and the value of the element at that index.
+	* If we don't need to use the index we can use *blank identifier* i.e., underscore (\_)
+	* Go does not allow unused variables, it would result in compilation error.
 
 1. Two ways of declaring variable (strings)
 	* s := "" // Only used within a function, not for package level variables
@@ -58,3 +58,12 @@
 
 ### 1.3 Finding Duplicate lines
 1. Programs for ﬁle copying, printing, searching, sorting, counting, and the like all have a similar structure: a loop over the input, some computation on each element, and generation of output on the ﬂy or at the end.
+
+1. Refer dup1.go
+	* Map holds a set of key/value pairs
+	* Built in function creates a new empty map (in this example)
+	* The first time a new line is seen, the expression counts[line] on the right-hand side evaluvates to the zero value for its type, which is 0 for int.
+	* The order of map iteration in practice is random, varying from one run to another
+	* bufio.NewScanner reads input and breaks it into lines or words. (naturally it comes in lines)
+	* Each call to input.Scan() reads the next line and removes the newline character from the end; the result can be retrieved by calling input.Text()
+	* The scan function returns true if there is a line and false when there is no more input.
