@@ -26,6 +26,7 @@
 
 ### Command-Line Arguments
 1. Command-Line arguments are available to a program in a variable named Args that is part of the os package. This is a *slice* of strings.
+
 1. Refer echo1.go
 	* Comments begins with //
 	* If a variable is not explicitely initialised, it is implicitely initialised to the *zero* value for its type.
@@ -44,5 +45,16 @@
 		   // ...
 		}
 		```
+
+1. Refer echo2.go
+        * range produces a pair of values: the index and the value of the element at that index.
+        * If we don't need to use the index we can use *blank identifier* i.e., underscore (\_)
+        * Go does not allow unused variables, it would result in compilation error.
+
+1. Two ways of declaring variable (strings)
+	* s := "" // Only used within a function, not for package level variables
+	* var s string // Default initilization to the zero value for strings, that is ""
+
+
 ### 1.3 Finding Duplicate lines
 1. Programs for ﬁle copying, printing, searching, sorting, counting, and the like all have a similar structure: a loop over the input, some computation on each element, and generation of output on the ﬂy or at the end.
