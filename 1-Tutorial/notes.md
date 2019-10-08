@@ -33,12 +33,14 @@
 	* The **:=** symbol is part of a *short variable declaration*, a statement that declares one or more variables and gives them appropriate types based on the initializer values.
 	* While writing for loop these parts may be omitted
 		* A traditional while loop
-		```for condition {
+		```
+for condition {
 		   // ...
 		}
 		```
 		* A traditional infinite loop
-		```for {
+		```
+for {
 		   // ...
 		}
 		```
