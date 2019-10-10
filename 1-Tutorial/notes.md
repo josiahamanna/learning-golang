@@ -67,3 +67,15 @@
 	* bufio.NewScanner reads input and breaks it into lines or words. (naturally it comes in lines)
 	* Each call to input.Scan() reads the next line and removes the newline character from the end; the result can be retrieved by calling input.Text()
 	* The scan function returns true if there is a line and false when there is no more input.
+
+1. Refer dup2.go
+	* os.Open return two values. a) opened file b) built in *error* type
+	* If error is equal to nill, then the file is successfully opened.
+	* *Close* closes the file and releases any resourses
+	* If err is not nill, something went wrong. 
+	* Functions and other package level entities may be declared in any order (That the call to *countLines* precedes its declaration.)
+	* The changes made on counts map by countLines will be visible in mian.
+
+1. Refer dup3.go
+	* ioutil.ReadFile helps in reading the entire input in one big gulp.
+	* strings.Split helps in splitting it into lines all at once
